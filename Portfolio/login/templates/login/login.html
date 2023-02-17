@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% block title %}
+Login Page
+{% endblock title %}
+
+{% block myname %}Login{% endblock myname %}
+{% block container %}
+{{ block.super }}
+<form action="" method="POST" novalidate >
+  {% csrf_token %}
+  {{form.as_p}}
+    <input type="submit" value="Login">
+</form>
+{% endblock container %}

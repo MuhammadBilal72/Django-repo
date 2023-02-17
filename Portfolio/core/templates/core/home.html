@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Home {{ block.super }}{% endblock title %}
+{% block myname %}{{ block.super }}{% endblock myname %}
+{% block container %}{{ block.super }}
+
+
+<hr> <br>
+<br>
+<div class="inner-container">
+    <div class="profile-image-cntainer profile-container">
+        <img src="{% static 'core/images/myphoto.jpg' %}" alt="Profile-Image" class="profile-image">
+    </div>
+    <div class="profile-intro-container profile-container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores delectus mollitia qui corrupti ipsam accusantium quibusdam culpa doloribus, voluptatum dolorum explicabo adipisci unde alias itaque sit fuga fugiat pariatur sequi.
+        Eveniet, at quam. Ex cupiditate, dolores, , nam libero deleniti aliquid ipsum debitis deserunt perferendis laudantium. Eligendi impedit eum odio in reiciendis obcaecati veritatis.
+    </div>
+</div>
+
+{% endblock container %}
