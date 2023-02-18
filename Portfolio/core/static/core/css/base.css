@@ -1,0 +1,90 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    /* background-color: rgb(3, 1, 15); */
+    color: black;
+}
+.container{
+    background-color: rgb(219, 221, 224);
+    padding: 10px;
+    border-radius: 5px;
+}
+.myname{
+    font-size: 30px;
+    display:table;
+    padding-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inner-container{
+    padding: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(200, 204, 212);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    column-gap: 50px;
+}
+
+.profile-container{
+    height: 370px;
+    padding: 5px;
+    width: 240px;
+    border-bottom: 1px dotted black;
+    border-left: 1px dotted black;
+}
+
+.profile-intro-container{
+    width: 400px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-top: 1px dotted black;
+    border-right: 1px dotted black;
+    color: rgb(1, 0, 22);
+}
+.profile-image-cntainer{
+    padding: 20px;
+}
+.profile-image{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: .9s;
+}
+.profile-image:hover{
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+}
+@media screen and (max-width:650px){
+    .inner-container{
+        display: grid;
+        row-gap: 0px;
+    }
+    .profile-intro-container{
+        width: 200px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-image-cntainer{
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        border-radius: 0px;
+
+    }
+}
